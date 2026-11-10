@@ -1,0 +1,40 @@
+{
+  "name": "@silosave/social-url-parse",
+  "version": "0.1.0",
+  "description": "Pure URL validation, normalization and post IDs for eight social platforms. No fetching.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "license": "MIT",
+  "homepage": "https://silosave.com/",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node node_modules/typescript/bin/tsc -p tsconfig.json",
+    "test": "node verify.mjs",
+    "prepack": "node verify.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silosaveapp/social-url-parse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/silosaveapp/social-url-parse/issues"
+  }
+}
